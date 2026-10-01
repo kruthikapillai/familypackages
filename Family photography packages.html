@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Family photography packages</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0ec;--card:#f9faf7;--ink:#1d2823;--mute:#5d6a64;--line:#cfd6cf;--acc:#6b3f5a;--accfg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a17;--card:#1c2420;--ink:#e8ece6;--mute:#9aa8a0;--line:#2f3a35;--acc:#d6a3c1;--accfg:#1a1217}}
+:root[data-theme="dark"]{--bg:#141a17;--card:#1c2420;--ink:#e8ece6;--mute:#9aa8a0;--line:#2f3a35;--acc:#d6a3c1;--accfg:#1a1217}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "DM Sans",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 36px}
+h1{font:500 clamp(2.6rem,7vw,4.6rem)/1.02 "Cormorant Garamond",Georgia,serif;margin:0 0 18px;max-width:11em;letter-spacing:-.01em}
+header p{max-width:34em;color:var(--mute);margin:0;font-size:1.05rem}
+nav{display:flex;gap:6px;border-bottom:1px solid var(--line);margin:28px 0 36px;overflow-x:auto}
+nav button{font:inherit;background:none;border:0;color:var(--mute);padding:12px 16px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--acc);font-weight:500}
+button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+section[hidden]{display:none}
+.lede{font:italic 400 1.35rem/1.4 "Cormorant Garamond",Georgia,serif;margin:0 0 28px;max-width:30em}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.pkg{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px 26px;display:flex;flex-direction:column}
+.pkg.feat{border-color:var(--acc);box-shadow:inset 0 3px 0 var(--acc)}
+h2{font:600 1.9rem/1.1 "Cormorant Garamond",Georgia,serif;margin:0 0 4px}
+.meta{color:var(--mute);font-size:.92rem;margin:0 0 18px}
+.price{font:500 1.6rem "Cormorant Garamond",Georgia,serif;margin:0 0 16px;color:var(--acc)}
+ul{margin:0;padding:0;list-style:none}
+li{padding:8px 0;border-top:1px solid var(--line);font-size:.95rem}
+li.sub{color:var(--mute)}
+.plan{margin-top:20px;padding:14px 16px;background:var(--bg);border-radius:4px;font-size:.9rem}
+.plan b{display:block;font-weight:500;margin-bottom:2px}
+.plan span{color:var(--mute)}
+.add{margin-top:40px;padding:26px;border:1px dashed var(--line);border-radius:6px}
+.add h3{font:600 1.4rem "Cormorant Garamond",Georgia,serif;margin:0 0 10px}
+.add p{margin:0 0 10px;color:var(--mute);font-size:.95rem}
+.add li{display:flex;justify-content:space-between;gap:16px}
+.cta{margin:72px 0 0;padding:48px 0 64px;border-top:1px solid var(--line)}
+.cta h2{font-size:2.3rem}
+.cta p{color:var(--mute);max-width:32em;margin:8px 0 20px}
+.btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:13px 26px;border-radius:4px;text-decoration:none;font-weight:500}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Portraits for the family you have now.</h1>
+<p>Choose a one-off session, a full day in your life, or a year of milestones. Every package includes your immediate family.</p>
+</header>
+
+<nav role="tablist" aria-label="Package types">
+<button role="tab" id="t0" aria-selected="true" aria-controls="p0">One-off sessions</button>
+<button role="tab" id="t1" aria-selected="false" aria-controls="p1">A day in the life of</button>
+<button role="tab" id="t2" aria-selected="false" aria-controls="p2">Annual packages</button>
+</nav>
+
+<section id="p0" role="tabpanel" aria-labelledby="t0">
+<p class="lede">A single session, planned around the number of looks you want.</p>
+<div class="grid g3">
+<article class="pkg"><h2>Essential</h2><p class="meta">1.5 hours · One look</p><p class="price">₹ ____</p>
+<ul><li>__ edited images (soft copy)</li><li>Immediate family included</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul></article>
+<article class="pkg feat"><h2>Signature</h2><p class="meta">3 hours · Two looks</p><p class="price">₹ ____</p>
+<ul><li>__ edited images (soft copy)</li><li>Immediate family included</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul></article>
+<article class="pkg"><h2>Heirloom</h2><p class="meta">4.5 hours · Three looks</p><p class="price">₹ ____</p>
+<ul><li>__ edited images (soft copy)</li><li>Immediate family included</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul></article>
+</div>
+<div class="add"><h3>Add-on services</h3>
+<ul><li>Photo frame, 8 × 12 inch, museum quality print (about A4)</li><li>Photo frame, 9 × 12.5 inch, museum quality print</li><li>Photo frame, 12.5 × 16.5 inch, museum quality print (about A3)</li><li>Coffee table album, 8 × 12</li><li>Coffee table album, 10 × 10</li><li><span>Make-up artist for the session</span><span>₹5,000</span></li></ul></div>
+</section>
+
+<section id="p1" role="tabpanel" aria-labelledby="t1" hidden>
+<p class="lede">We spend the day with you and photograph it as it unfolds.</p>
+<div class="grid g2">
+<article class="pkg"><h2>A Bite of Everyday</h2><p class="meta">Up to 3 hours · 1 session</p><p class="price">₹25,000</p>
+<ul><li>30 high resolution digital photographs, delivered via an online gallery</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul></article>
+<article class="pkg feat"><h2>A Slice of Life</h2><p class="meta">Up to 5 hours · 1 session</p><p class="price">₹40,000</p>
+<ul><li>50 high resolution digital photographs, delivered via an online gallery</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul></article>
+</div>
+<div class="add"><h3>Add an album</h3><p>Albums are available with either photography experience.</p>
+<ul><li><span>10 × 10 inch</span><span>₹12,000 onwards</span></li><li><span>12 × 12 inch</span><span>₹15,000 onwards</span></li></ul></div>
+</section>
+
+<section id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+<p class="lede">Sessions spread across the year, so each stage gets its own time.</p>
+<div class="grid g2">
+<article class="pkg"><h2>First Steps</h2><p class="meta">First year · 4 milestone sessions</p><p class="price">₹ ____</p>
+<ul><li>Choose from maternity, hospital, newborn, infant and first birthday milestones</li><li>2 hours per session</li><li>__ edited images (soft copy)</li><li>Immediate family included</li><li>15 months completion window</li><li class="sub">Low resolution unedited images shared via a private link for selection and personal archive</li></ul>
+<div class="plan"><b>Payment plan</b><span>50% to enrol · 25% before session one · 25% before session two</span></div>
+<div class="plan"><b>Add on: 10 × 10 inch first-year album</b><span>A heirloom bringing all four chapters from the first year together.</span></div></article>
+<article class="pkg feat"><h2>Stepping Stones</h2><p class="meta">Per year · 3 sessions</p><p class="price">₹ ____</p>
+<ul><li>Choose from birthday, sibling portraits, grandparents, mother + child, father + child, Mother's Day, Father's Day, festive portraits, a day in the life of</li><li>2 hours per session</li><li>__ edited images (soft copy)</li><li>Immediate family included</li><li>12 months completion window</li><li>Priority calendar access: first choice of annual dates, including weekends and holidays</li><li class="sub">All wonderful images shot during the session shared via a private link for selection and personal archive (low resolution, unedited)</li></ul>
+<div class="plan"><b>Payment plan</b><span>50% to enrol · 50% before session two</span></div>
+<div class="plan"><b>Add on: 8 × 8 inch yearly legacy volume</b><span>A heirloom archiving the yearly memories together, volume by volume, as we continue.</span></div></article>
+</div>
+</section>
+
+<div class="cta"><h2>Not sure which fits?</h2><p>Tell us about your family and the occasion, and we'll suggest a package.</p><a class="btn" href="#">Enquire about a session</a></div>
+</div>
+<script>
+const tabs=[...document.querySelectorAll('[role=tab]')];
+tabs.forEach((t,i)=>t.addEventListener('click',()=>{
+tabs.forEach((x,j)=>{x.setAttribute('aria-selected',i===j);document.getElementById('p'+j).hidden=i!==j});
+}));
+</script>
+</body>
+</html>
